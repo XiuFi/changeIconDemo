@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9oc-eW-XAP">
+                                <rect key="frame" x="162.5" y="300" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="aEu-79-p6p"/>
+                                    <constraint firstAttribute="height" constant="50" id="ymC-W1-09Q"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="cat.png"/>
+                                <connections>
+                                    <action selector="catBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qHI-ff-KPi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vsq-RG-uR5">
+                                <rect key="frame" x="162.5" y="220" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="4Xw-xJ-fmu"/>
+                                    <constraint firstAttribute="height" constant="50" id="n8X-Rs-nx6"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="dog.png"/>
+                                <connections>
+                                    <action selector="dogBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nNn-ew-3SI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9oc-eW-XAP" firstAttribute="top" secondItem="vsq-RG-uR5" secondAttribute="bottom" constant="30" id="7hR-ou-VBE"/>
+                            <constraint firstItem="9oc-eW-XAP" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="SeV-Pg-deb"/>
+                            <constraint firstItem="vsq-RG-uR5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="moZ-kL-yLO"/>
+                            <constraint firstItem="vsq-RG-uR5" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ztn-PC-1rz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cat.png" width="1024" height="1024"/>
+        <image name="dog.png" width="1024" height="1024"/>
+    </resources>
+</document>
